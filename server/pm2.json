@@ -1,0 +1,34 @@
+{
+    "apps" : [{
+        "name" : "web-fullstack-engineer",
+        "exec_mode" :"fork_mode",
+        "instances": "1",
+        "log_date_format" : "YYYY-MM-DD HH:mm Z",
+        "max_memory_restart": "500M",
+        "kill_timeout" : 3000,
+        "port": 3100,
+        "script" : "./dist/index.js",
+        "watch": "./dist/",
+        "env_dev": {
+            "NODE_ENV": "dev"
+        },
+        "env_local": {
+            "NODE_ENV": "local"
+        },
+        "env_qa": {
+            "NODE_ENV": "qa"
+        },
+        "env_prod": {
+            "NODE_ENV": "prod"
+        },
+        "env_uat": {
+            "NODE_ENV": "uat"
+        },
+        "env_sbx": {
+            "NODE_ENV": "sbx"
+        },
+        "env_stg": {
+            "NODE_ENV": "stg"
+        }
+    }]
+}

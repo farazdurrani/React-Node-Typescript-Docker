@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "9001:80"
+    volumes:
+      - ./:/app
+      - ~/.aws:/root/.aws
