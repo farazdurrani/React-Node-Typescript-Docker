@@ -17,7 +17,7 @@ $ yarn install
 $ cd ../server/
 $ yarn install
 $ cd ../
-$ docker-compose up
+$ sudo docker-compose up
 ```
 
 Note: Need help installing docker: see https://docs.docker.com/v17.12/docker-for-mac/install/
