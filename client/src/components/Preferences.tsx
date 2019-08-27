@@ -70,14 +70,14 @@ class Preferences extends React.Component<MyProps> {
           &nbsp; &nbsp; {/* some space between email field and checkbox */}
           <div className="ui checkbox">
             {/* tslint:disable-next-line: max-line-length */}
-            <input type="checkbox" disabled={this.state.primaryEmailCheckboxDisabled} ref={this.primaryEmailCheckboxRef} onChange={e => this.setState({ primaryEmailCheckbox: e.target.checked })} /><label> Continue to receive further email communications from DMD </label>
+            <input type="checkbox" disabled={this.state.primaryEmailCheckboxDisabled} ref={this.primaryEmailCheckboxRef} onChange={e => this.setState({ primaryEmailCheckbox: e.target.checked })} /><label> Continue to receive further email communications</label>
           </div>
           <h3>Device Tracking</h3>
           <div className="ui checkbox">
             {/* tslint:disable-next-line: max-line-length */}
-            <input type="checkbox" onChange={e => this.setState({ deviceTrackingCheckbox: e.target.checked })} /><label> Continue to identify my device so relevant content can be delivered to me from DMD </label>
+            <input type="checkbox" onChange={e => this.setState({ deviceTrackingCheckbox: e.target.checked })} /><label> Continue to identify my device so relevant content can be delivered to me</label>
           </div>
-          <p>If you have a preferred email address for communications from DMD please provide here</p>
+          <p>If you have a preferred email address for communications, please provide here</p>
           <div className="ui mini icon input">
             {/* tslint:disable-next-line: max-line-length */}
             <input type="email" value={this.state.secondaryEmail} placeholder="Enter email..." onChange={this.onSecondaryEmailChange} />
@@ -85,7 +85,7 @@ class Preferences extends React.Component<MyProps> {
           &nbsp; &nbsp; {/* some space between email field and checkbox */}
           <div className="ui checkbox">
             {/* tslint:disable-next-line: max-line-length */}
-            <input type="checkbox" disabled={this.state.secondaryEmailCheckboxDisabled} ref={this.secondaryEmailCheckboxRef} onChange={e => this.setState({ secondaryEmailCheckbox: e.target.checked })} /><label> Continue to receive further email communications from DMD </label>
+            <input type="checkbox" disabled={this.state.secondaryEmailCheckboxDisabled} ref={this.secondaryEmailCheckboxRef} onChange={e => this.setState({ secondaryEmailCheckbox: e.target.checked })} /><label> Continue to receive further email communications.</label>
           </div>
           <br />
           <br />

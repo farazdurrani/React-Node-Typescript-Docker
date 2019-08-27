@@ -7,15 +7,15 @@ const HeaderContent = () => (
   <Segment clearing={true}>
     <Header as="h6" floated="left">
         <Image
-            style={{"fontSize": 50}}
+            style={{"fontSize": 25}}
             src={logo}
             as="a"
-            href="https://www.dmdconnects.com/"
+            href="https://stackoverflow.com/users/4828463/faraz-durrani?tab=profile"
             target="_blank"
         />
     </Header>
     <Header as="h3" floated="left">
-        <br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DMD Preference Center
+        <br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; React/Node.js Prototype Application
     </Header>
   </Segment>
 );
