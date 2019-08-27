@@ -1,1 +1,7 @@
 .DS_Store
+playgound.js
+*yarn.lock
+server/test
+logs+__16.47.13.log
+logs___22.12.21.log
+logs.23.51.41.log

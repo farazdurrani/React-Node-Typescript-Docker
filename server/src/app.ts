@@ -1,6 +1,6 @@
 import * as bodyParser from "body-parser";
 import * as express from "express";
-import { ExampleHandler } from "./routes/example_handler";
+import { RestApiHandler } from "./routes/route_handler";
 
 const serverLogger = console;
 const app = express();
@@ -11,8 +11,8 @@ const addRoutes = async () => {
         app
             .use(bodyParser.urlencoded({ "extended": false }))
             .use(bodyParser.json())
-            .use("/api/v1/example", ExampleHandler());
-    
+            .use("/api", RestApiHandler());
+
     } catch (err) {
         serverLogger.dir(err);
     }

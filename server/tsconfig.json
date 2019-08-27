@@ -13,7 +13,6 @@
     },
     "exclude": [
         "**/__snapshots__/*",
-        "**/*.spec.*",
         "./dist/*",
     ]
 }

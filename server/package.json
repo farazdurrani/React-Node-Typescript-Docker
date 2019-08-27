@@ -8,7 +8,8 @@
     "build": "tsc",
     "start": "yarn install; tsc; pm2 start pm2.json --env=local; concurrently \"tsc --watch\" \"pm2 logs web-fullstack-engineer\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:unit": "jest --coverage -t=unit",
+    "put": "-t=unit back in test:unit script",
+    "test:unit": "jest --coverage --testPathIgnorePatterns dist",
     "lint": "tslint --config ./tslint.json --project ./tsconfig.json --fix"
   },
   "license": "ISC",
@@ -29,6 +30,9 @@
     "express": "4.16.0",
     "express-async-router": "0.1.13",
     "reflect-metadata": "0.1.12",
+    "sinon": "^7.2.3",
+    "sqlite3": "^4.0.6",
+    "supertest": "3.4.1",
     "typeorm": "0.2.6"
   },
   "jest": {
